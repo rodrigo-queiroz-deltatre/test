@@ -21,7 +21,7 @@
                             <MediaFile id="GDFP" delivery="progressive" width="1920" height="1080"
                                 type="video/mp4" bitrate="4000" scalable="true"
                                 maintainAspectRatio="true">
-                                    <![CDATA[ https://rodrigo-queiroz-deltatre.github.io/test/broken.mp4 ]]>
+                                    <![CDATA[ https://rodrigo-queiroz-deltatre.github.io/test/broken.mov ]]>
                             </MediaFile>
                         </MediaFiles>
                     </Linear>
