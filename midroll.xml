@@ -18,8 +18,8 @@
                     <Linear>
                         <Duration>00:00:10</Duration>
                         <MediaFiles>
-                            <MediaFile id="GDFP" delivery="progressive" width="1280" height="720"
-                                type="video/mp4" bitrate="410" scalable="true"
+                            <MediaFile id="GDFP" delivery="progressive" width="1920" height="1080"
+                                type="video/mp4" bitrate="4000" scalable="true"
                                 maintainAspectRatio="true">
 <![CDATA[ https://rodrigo-queiroz-deltatre.github.io/test/19_source_167344_832075.mp4 ]]>
 </MediaFile>
