@@ -1,0 +1,32 @@
+<VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd"
+    version="3.0">
+    <Ad id="710742496">
+        <InLine>
+            <AdSystem>GDFP</AdSystem>
+            <AdTitle>External NCA1C1L3 Midroll</AdTitle>
+            <Description>
+<![CDATA[ External NCA1C1L3 Midroll ad ]]>
+</Description>
+            <Error>
+<![CDATA[ https://pubads.g.doubleclick.net/pagead/interaction/?ai=BQaHeN9R1ZOeZL4OeoPwPrbK-qArorI_rBgAAABABIKjduyY4AVi4yK7G1wFg_eiigfADugEKNzI4eDkwX3htbMgBBcACAuACAOoCIy8xMjQzMTkwOTYvZXh0ZXJuYWwvYWRfcnVsZV9zYW1wbGVz-AKE0h6AAwGQA-ADmAOsAqgDAeAEAdIFBhDgo_TSApAGAaAGI6gHmgaoB_PRG6gHltgbqAeqm7ECqAeDrbECqAf_nrECqAffn7EC2AcB4AcB0ggUCIBhEAEYHTICigI6AoBASL39wTrYCAKACgWYCwHQFQH4FgGAFwE&sigh=dQMt1lXcl04&label=videoplayfailed[ERRORCODE] ]]>
+</Error>
+            <Impression>
+<![CDATA[ https://securepubads.g.doubleclick.net/pcs/view?xai=AKAOjsteFqYrtHf0na8MoorWvOBQ6iSSDAdMXgmPeOosvbYrRRPHJNvP9VW8-el_dadw7dW74xCq8j7-H_rmc6MsbqbsccuVb_g0H9SWzgfCdHPHAheSDHYXdO69lM0Lz9Mjtd4_94J2YCBy3ZUtIc2PovgRwwBwybm8zyIggSUAH8JyhIqKuTYzxqf8P-2MD_gH7z3WP1QXa9mS4d02lE18N6XLdZ-9rHMMz8PLFSKqkQhuXjxm-H4C5JyACZqMQ64OnTnFZcOn6RPO5Rh0NP3puLG0QzE5CLy7ang4klKSol0HEzQGB7Xam24fMg7t&sai=AMfl-YSL-2RCI9KC0vvFHm82-Y7vSYyKX3dQWcJyGOYnGtLHCAGcWvQoMi0wQGdatYYLjYa6kDgBeGYbgcYg6ATzmvMKRFdWL5EyS5Z9sA&sig=Cg0ArKJSzGG5MwoJ72b0EAE&uach_m=[UACH]&adurl= ]]>
+</Impression>
+            <Creatives>
+                <Creative id="57861186616" sequence="1">
+                    <Linear>
+                        <Duration>00:00:15</Duration>
+                        <MediaFiles>
+                            <MediaFile id="GDFP" delivery="progressive" width="1920" height="1080"
+                                type="video/mp4" bitrate="4000" scalable="true"
+                                maintainAspectRatio="true">
+                                    <![CDATA[ https://rodrigo-queiroz-deltatre.github.io/test/24.mp4 ]]>
+                            </MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+            </Creatives>
+        </InLine>
+    </Ad>
+</VAST>
