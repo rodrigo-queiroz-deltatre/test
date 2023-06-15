@@ -1,9 +1,9 @@
 <VAST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vast.xsd"
     version="3.0">
-    <Ad id="710742496">
+    <Ad id="1">
         <InLine>
             <AdSystem>GDFP</AdSystem>
-            <AdTitle>Midroll 2</AdTitle>
+            <AdTitle>Ad 1</AdTitle>
             <Creatives>
                 <Creative id="1" sequence="1">
                     <Linear>
@@ -17,6 +17,14 @@
                         </MediaFiles>
                     </Linear>
                 </Creative>
+            </Creatives>
+        </InLine>
+    </Ad>
+    <Ad id="2">
+        <InLine>
+            <AdSystem>GDFP</AdSystem>
+            <AdTitle>Ad 2</AdTitle>
+            <Creatives>
                 <Creative id="2" sequence="2">
                     <Linear>
                         <Duration>00:00:15</Duration>
@@ -29,6 +37,14 @@
                         </MediaFiles>
                     </Linear>
                 </Creative>
+            </Creatives>
+        </InLine>
+    </Ad>
+    <Ad id="3">
+        <InLine>
+            <AdSystem>GDFP</AdSystem>
+            <AdTitle>Ad 3</AdTitle>
+            <Creatives>
                 <Creative id="3" sequence="3">
                     <Linear>
                         <Duration>00:00:15</Duration>
