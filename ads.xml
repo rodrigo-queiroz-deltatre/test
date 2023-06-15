@@ -7,7 +7,7 @@
         </vmap:AdSource>
     </vmap:AdBreak>
     <vmap:AdBreak timeOffset="00:02:00.000" breakType="linear" breakId="midroll-2">
-        <vmap:AdSource id="midroll-2" allowMultipleAds="false" followRedirects="true">
+        <vmap:AdSource id="midroll-2" allowMultipleAds="true" followRedirects="true">
             <vmap:AdTagURI templateType="vast3">
                 <![CDATA[ https://rodrigo-queiroz-deltatre.github.io/test/midroll-2.xml ]]>
             </vmap:AdTagURI>

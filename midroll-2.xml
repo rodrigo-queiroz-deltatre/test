@@ -14,11 +14,25 @@
                                 maintainAspectRatio="true">
                                     <![CDATA[ https://gcdn.2mdn.net/videoplayback/id/b0cae534ad6f3e91/itag/37/source/web_video_ads/ctier/L/acao/yes/ip/0.0.0.0/ipbits/0/expire/3826988545/sparams/id,itag,source,ctier,acao,ip,ipbits,expire/signature/3DD33085E3B791BED239296F996E962B9CD58315.37641BE6618C6D9067DF563E8A56D1AB1A3F50C4/key/ck2/file/file.mp4?cpn=44Xq9ET4ecSFTHw8 ]]>
                             </MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+                <Creative id="2" sequence="2">
+                    <Linear>
+                        <Duration>00:00:15</Duration>
+                        <MediaFiles>
                             <MediaFile id="GDFP" delivery="progressive" width="1920" height="1080"
                                 type="video/mp4" bitrate="4000" scalable="true"
                                 maintainAspectRatio="true">
                                     <![CDATA[ https://gcdn.2mdn.net/videoplayback/id/e7a09deed9732c9b/itag/37/source/web_video_ads/ctier/L/acao/yes/ip/0.0.0.0/ipbits/0/expire/3826899854/sparams/id,itag,source,ctier,acao,ip,ipbits,expire/signature/4F0E875904F28E26A87ACE6703991447B52DCA2.1F54F27518C8F07CDC75F5471289E4AF64BA9EE7/key/ck2/file/file.mp4?cpn=xccqr28wCEhylvkp ]]>
                             </MediaFile>
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+                <Creative id="3" sequence="3">
+                    <Linear>
+                        <Duration>00:00:15</Duration>
+                        <MediaFiles>
                             <MediaFile id="GDFP" delivery="progressive" width="1920" height="1080"
                                 type="video/mp4" bitrate="4000" scalable="true"
                                 maintainAspectRatio="true">
