@@ -13,7 +13,7 @@ jobs:
         id: testFile
         run: |
             path=$(find "$(cd ..; pwd)" -name test.txt -type f)
-            echo "file path: ${{ $path }}"
+            echo "file path: $path"
             echo "path=$path" >> $GITHUB_OUTPUT
       - name: Print path
         run: |
