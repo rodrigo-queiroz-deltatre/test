@@ -6,12 +6,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: generate file
-        run: touch test.txt
+        run: |
+          touch test.txt
+          echo "inside test file" >> test.txt
       - name: get file path
         id: testFile
         run: |
             path=$(find "$(cd ..; pwd)" -name test.txt -type f)
-            echo $path
+            echo "file path: ${{ path }}"
             echo "path=$path" >> $GITHUB_OUTPUT
       - name: Print path
-        run: echo ${{ steps.testFile.outputs.path }}
+        run: |
+          echo ${{ steps.testFile.outputs.path }}
+          cat ${{ steps.testFile.outputs.path }}
