@@ -10,8 +10,8 @@ jobs:
       - name: get file path
         id: testFile
         run: |
-            path=$(find . -name test.txt -type f | head -1)
-            echo realpath $path
-            echo "path=$(realpath '$path')" >> $GITHUB_OUTPUT
+            path=$(find $(cd ..; pwd) . -name test.txt -type f)
+            echo $path
+            echo "path=$path" >> $GITHUB_OUTPUT
       - name: Print path
         run: echo ${{ steps.testFile.outputs.path }}
