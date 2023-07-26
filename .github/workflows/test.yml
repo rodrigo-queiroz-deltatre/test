@@ -11,7 +11,7 @@ jobs:
         id: testFile
         run: |
             path=$(find . -name test.txt -type f | head -1)
-            echo $path
+            echo $path::path
             echo "path=$path" >> $GITHUB_OUTPUT
       - name: Print path
         run: echo ${{ steps.testFile.outputs.path }}
