@@ -11,4 +11,4 @@ jobs:
             path=something
             echo "path=path" >> $GITHUB_OUTPUT
       - name: Print path
-        run: echo "steps.getPath.outputs.path"
+        run: echo "${{ steps.getPath.outputs.path }}"
