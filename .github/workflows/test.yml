@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: generate file
-        run: mkdir test.txt
+        run: touch test.txt
       - name: get file path
         id: testFile
         run: |
