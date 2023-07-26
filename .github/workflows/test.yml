@@ -5,10 +5,12 @@ jobs:
   bash-example:
     runs-on: ubuntu-latest
     steps:
-      - name: Reuse output
-        id: getPath
+      - name: generate file
+        run: mkdir test.txt
+      - name: get file path
+        id: testFile
         run: |
-            path=something
+            path=$(find . -name \*test.txt -type f | head -1)
             echo "path=$path" >> $GITHUB_OUTPUT
       - name: Print path
-        run: echo ${{ steps.getPath.outputs.path }}
+        run: echo ${{ steps.testFile.outputs.path }}
