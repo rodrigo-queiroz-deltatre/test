@@ -1,0 +1,14 @@
+name: Test
+on:
+  workflow_dispatch
+jobs:
+  bash-example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Reuse output
+        id: getPath
+        run: |
+            path=something
+            echo "path=path" >> $GITHUB_OUTPUT
+      - name: Print path
+        run: echo "steps.getPath.outputs.path"
