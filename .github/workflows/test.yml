@@ -1,6 +1,6 @@
 name: Test
 on:
-  workflow_call
+  workflow_dispatch
 jobs:
   bash-example:
     runs-on: ubuntu-latest
@@ -9,6 +9,6 @@ jobs:
         id: getPath
         run: |
             path=something
-            echo "path=path" >> $GITHUB_OUTPUT
+            echo "path=$path" >> $GITHUB_OUTPUT
       - name: Print path
         run: echo ${{ steps.getPath.outputs.path }}
