@@ -32,3 +32,7 @@ jobs:
         run: |
           echo  The tags are ${{ inputs.tags }} 
           echo $HOME
+      - name: create dir
+        run: mkdir $HOME/upload
+      - name: list dir
+        run: ls -la $HOME
