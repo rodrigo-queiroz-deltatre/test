@@ -1,21 +1,32 @@
-name: Test
 on:
-  workflow_dispatch
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+          - info
+          - warning
+          - debug
+      print_tags:
+        description: 'True to print to STDOUT'
+        required: true
+        type: boolean
+      tags:
+        description: 'Test scenario tags'
+        required: true
+        type: string
+      environment:
+        description: 'Environment to run tests against'
+        type: environment
+        required: true
+
 jobs:
-  bash-example:
+  print-tag:
     runs-on: ubuntu-latest
+    if:  ${{ inputs.print_tags }} 
     steps:
-      - name: generate file
-        run: |
-          touch test.txt
-          echo "inside test file" >> test.txt
-      - name: get file path
-        id: testFile
-        run: |
-            path=$(find -name test.txt -type f)
-            echo "file path: $path"
-            echo "path=$path" >> $GITHUB_OUTPUT
-      - name: Print path
-        run: |
-          echo ${{ steps.testFile.outputs.path }}
-          cat ${{ steps.testFile.outputs.path }}
+      - name: Print the input tag to STDOUT
+        run: echo  The tags are ${{ inputs.tags }} 
