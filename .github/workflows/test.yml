@@ -28,6 +28,6 @@ jobs:
         run: ls -la $UPLOAD_DIR
 
       - name: reuse workflow
-        uses: rodrigo-queiroz-deltatre/test2/.github/workflows/blank.yml@main
+        uses: ./.github/workflows/reuable.yml
         with:
           username: 'Rodrigo'
