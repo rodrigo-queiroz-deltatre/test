@@ -9,6 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      - name: test reusable workflow
+        uses: rodrigo-queiroz-deltatre/test2/.github/workflows/blank.yml@main
+        with: 
+          username: 'Rodrigo'
+      
       - name: Print the input tag to STDOUT
         run: |
           echo  The tags are ${{ inputs.tags }} 
@@ -26,8 +31,3 @@ jobs:
       
       - name: list dir
         run: ls -la $UPLOAD_DIR
-      
-      - name: test reusable workflow
-        uses: rodrigo-queiroz-deltatre/test2/.github/workflows/blank.yml@main
-        with: 
-          username: 'Rodrigo'
