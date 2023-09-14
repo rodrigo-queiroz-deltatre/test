@@ -18,3 +18,7 @@ jobs:
         run: touch $UPLOAD_DIR/names
       - name: list dir
         run: ls -la $UPLOAD_DIR
+      - name: test reusable workflow
+        uses: rodrigo-queiroz-deltatre/test2/.github/workflows/blank.yml@main
+        with: 
+          username: 'Rodrigo'
