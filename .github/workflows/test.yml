@@ -14,7 +14,12 @@ jobs:
     name: 'Build stuff'
     runs-on: ubuntu-latest
     
-    steps:    
+    steps:
+      - name: "Checkout codebase"
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          
       - name: Set upload dir env
         run: echo "UPLOAD_DIR=$(echo $HOME)/upload" >> $GITHUB_ENV
       
@@ -26,9 +31,6 @@ jobs:
       
       - name: list dir
         run: ls -la $UPLOAD_DIR
-
-      - name: Check out repository
-        uses: actions/checkout@v3
 
       - name: reusable workflow
         uses: ./.github/workflows/reuable.yml
