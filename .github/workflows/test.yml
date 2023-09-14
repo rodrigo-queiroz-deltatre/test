@@ -2,22 +2,29 @@ on:
   workflow_dispatch:
 
 jobs:
-  print-tag:
+  test:
+    name: 'Testing shit out'
     runs-on: ubuntu-latest
+    
     steps:
       - name: Print the input tag to STDOUT
         run: |
           echo  The tags are ${{ inputs.tags }} 
           echo $HOME
           echo $UPLOAD
+    
       - name: Set upload dir
         run: echo "UPLOAD_DIR=$(echo $HOME)/upload" >> $GITHUB_ENV
+      
       - name: create dir
         run: mkdir $UPLOAD_DIR
+      
       - name: create file
         run: touch $UPLOAD_DIR/names
+      
       - name: list dir
         run: ls -la $UPLOAD_DIR
+      
       - name: test reusable workflow
         uses: rodrigo-queiroz-deltatre/test2/.github/workflows/blank.yml@main
         with: 
