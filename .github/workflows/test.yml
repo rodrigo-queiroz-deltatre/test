@@ -27,6 +27,9 @@ jobs:
       - name: list dir
         run: ls -la $UPLOAD_DIR
 
+      - name: Check out repository
+        uses: actions/checkout@v3
+
       - name: reusable workflow
         uses: ./.github/workflows/reuable.yml
         with:
