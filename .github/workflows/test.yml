@@ -27,7 +27,7 @@ jobs:
       - name: list dir
         run: ls -la $UPLOAD_DIR
 
-      - name: reuse workflow
+      - name: reusable workflow
         uses: ./.github/workflows/reuable.yml
         with:
           username: 'Rodrigo'
