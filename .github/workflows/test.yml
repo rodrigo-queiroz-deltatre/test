@@ -2,20 +2,20 @@ name: Test
 
 on:
   workflow_dispatch:
+    inputs:
+      aws_upload:
+        description: 'Upload build to Bell/AWS S3 Bucket'
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   build:
-    name: 'Testing shit out'
+    name: 'Build stuff'
     runs-on: ubuntu-latest
     
-    steps:
-      - name: Print the input tag to STDOUT
-        run: |
-          echo  The tags are ${{ inputs.tags }} 
-          echo $HOME
-          echo $UPLOAD
-    
-      - name: Set upload dir
+    steps:    
+      - name: Set upload dir env
         run: echo "UPLOAD_DIR=$(echo $HOME)/upload" >> $GITHUB_ENV
       
       - name: create dir
@@ -26,3 +26,8 @@ jobs:
       
       - name: list dir
         run: ls -la $UPLOAD_DIR
+
+      - name: reuse workflow
+        uses: rodrigo-queiroz-deltatre/test2/.github/workflows/blank.yml@main
+        with:
+          username: 'Rodrigo'
