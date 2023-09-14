@@ -9,8 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: test reusable workflow
-        uses: rodrigo-queiroz-deltatre/test2/.github/workflows/blank.yml@main
+      - uses: rodrigo-queiroz-deltatre/test2/.github/workflows/blank.yml@main
         with: 
           username: 'Rodrigo'
       
