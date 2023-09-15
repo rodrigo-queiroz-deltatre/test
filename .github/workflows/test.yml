@@ -33,6 +33,6 @@ jobs:
         run: ls -la $UPLOAD_DIR
 
       - name: reusable workflow
-        uses: ./.github/workflows/reuable.yml
+        uses: ./.github/workflows/reusable.yml
         with:
           username: 'Rodrigo'
